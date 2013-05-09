@@ -1,6 +1,6 @@
 There are two different implementation->
-requests-enabled -> which users requests (urllib3) to fetch the webpage
-urlib2-enabled -> which uses same old urllib2 (shouldnt give you firewall troubles though)
+requests-enabled -> which uses requests (urllib3) to fetch the webpage
+urlib2-enabled -> which uses the same old urllib2 (shouldnt give you firewall troubles though.)
 
 The Problem statement was to scan through the readable content of the page and according to relevance of location (The readability plugin which removes unnecessary data like comments,frames,header,footer etc) and fetch the image url if exists.
 
@@ -11,7 +11,7 @@ Used libraries->
 * Readability python lxml 
 https://github.com/jcharum/lxml-readability
 
-* lxml (I could have used regex to search img tag but anyway as readability uses lxml i did too.)
+* lxml (I could have used regex to search img tag but anyway as readability uses lxml i did it too and moreover i always use the fast lxml over BSoup)
 
 Run->
 git clone https://github.com/Sadhanandh/Chat-thumbnailer.git
